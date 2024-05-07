@@ -22,8 +22,8 @@ export default function Footer() {
                 </div>
             </div>
             <div className="text-white relative mx-auto mt-5 lg:w-[80%]">
-                <div className="flex items-center gap-1 w-40 lg:w-[80%] lg:mx-0 mx-auto">
-                    <Image src="/Group.png" alt="logo" width={37.49} height={37.49}  className="lo "/>
+                <div className="flex items-center gap-1 w-20 w-[90%] lg:w-[80%] lg:mx-0 mx-auto">
+                    <Image src="/Group.png" alt="logo" width={37.49} height={37.49}  className="lg:mx-0 mx-auto "/>
                     <h1 className="text-2xl font-meidum">WorldsAds</h1>
                 </div>
                 <div className="flex items-center lg:justify-start w-[90%] lg:mx-0 mx-auto lg:w-[80%] justify-center mt-5 gap-10">
