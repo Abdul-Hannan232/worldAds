@@ -16,7 +16,7 @@ const Header = () => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
 
-            if (scrollPosition > 10) {
+            if (scrollPosition > 0) {
                 setIsHeaderFixed(true);
             } else {
                 setIsHeaderFixed(false);
@@ -31,21 +31,20 @@ const Header = () => {
     }, []); 
 
     return (
-        <>
-            <div className={`fixed ${isHeaderFixed ? 'top-0' : 'top-12'} gradient-color pr-5 p-10 pl-5 sm:pr-16  right-0 left-0 sm:pl-16 h-14 z-40 flex justify-between items-center bg-transparent`}>
-                <img src="./assets/images/logo.png" alt="Logo" />
+        <div className={`fixed ${isHeaderFixed ? ' bg-[#BF2506]' : ''}  w-full  lg:p-10 py-10  z-40 bg-transparent`}>
+            <div className={` w-[85%] mx-auto flex justify-between items-center bg-transparent`}>
+                <img src="./assets/images/logo.png" alt="Logo" className=' lg:w-52 lg:h-12 w-36  h-8'/>
 
                 <button 
-                    className="bg-[#FFFFFF1A] border-2 border-white px-6 py-3 hover:border rounded-[100px]" 
+                    className="bg-[#FFFFFF1A] border-2 border-white lg:px-6 lg:py-3 px-3 py-1 hover:border rounded-[100px]" 
                     type="button" 
                     onClick={handleDrawerToggle} 
                 >
-                    <img src="./assets/images/bars.svg" alt="Menu" />
+                    <img src="./assets/images/bars.svg" alt="Menu"  className='w-6'/>
                 </button>
             </div>
 
-            {/* {isDrawerOpen && <NavContent />} */}
-        </>
+        </div>
     );
 };
 
