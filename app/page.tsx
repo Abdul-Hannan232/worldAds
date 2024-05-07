@@ -1,113 +1,70 @@
 import Image from "next/image";
-
+import Header from "./component/Header"
+import Main from "./component/Main";
+import NavContent from "./component/NavContent";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div>
+        {/* <Header /> */}
+        {/* <Main /> */}
+        <div className="lg:flex w-[80%] mt-20 mx-auto items-end justify-between">
+          <div >
+            <Image src="/Group 1.png" alt="Image" width={203} height={207} className="lg:w-[493px] lg:h-[497px] lg:mx-0 mx-auto " />
+          </div>
+          <div className="xl:w-[500px] md:w-[400px] lg:mt-0 mt-10 lg:mx-0 mx-auto">
+            <h1 className="xl:text-6xl md:text-5xl text-3xl font-medium lg:text-start text-center text-[#181818]">Node operators</h1>
+            <p className="xl:text-xl lg:text-sm text-md font-light lg:w-auto md:w-80  lg:text-sm md:text-md text-xs  lg:mx-0 mx-auto text-[#030303] lg:text-start text-center mt-5">Become a cornerstone of digital advertising. Own a smart digital screen and start earning as advertisers choose your prime ad slots.</p>
+            <div className="border border-gray-300 xl:mt-14 mt-10 rounded-full lg:mx-0 mx-auto  xl:w-44 w-36 ">
+              <button className="text-center text-sm border xl:p-3 md:p-3 p-2 rounded-full  xl:w-[164px] w-[133px] font-medium m-1 border-[#181818]">Join waitlist</button>
+            </div>
+          </div>
         </div>
+        <div className="flex lg:flex-row flex-col-reverse  w-[80%] mt-20 mx-auto items-end justify-between">
+          <div className="xl:w-[410px] md:w-[400px] lg:mt-0 mt-10 lg:mx-0 mx-auto">
+            <h1 className="xl:text-6xl md:text-5xl text-3xl font-medium lg:text-start text-center text-[#181818]">Ride & Earn</h1>
+            <p className="xl:text-lg lg:w-auto md:w-80  lg:text-sm md:text-md text-xs font-light lg:w-auto  lg:mx-0 mx-auto text-[#030303] lg:text-start text-center mt-5">Transform every journey into a profitable venture. Our Smart Rooftop Digital Screens turn miles into money, making every trip count.</p>
+            <div className="border border-gray-300 xl:mt-14 mt-10 rounded-full lg:mx-0 mx-auto  xl:w-44 w-36 ">
+              <button className="text-center text-sm border xl:p-3 md:p-3 p-2 rounded-full  xl:w-[164px] w-[133px] font-medium m-1 border-[#181818]">Join waitlist</button>
+            </div>
+          </div>
+          <div >
+            <Image src="/GroupCroped.png" alt="Image" width={453} height={357} className="lg:w-[563.48px] lg:h-[450.27px] lg:mx-0 mx-auto " />
+          </div>
+        </div>
+        {/* <div className="pl-32  flex mt-48 w-full background gap-24">
+          <div className="-mt-14">
+            <Image src="/Group 25.png" alt="image" width={526} height={726} />
+          </div>
+          <div className="w-[60%] mt-40">
+            <h1 className="text-6xl font-medium text-[#181818]">Advertise with</h1>
+            <h1 className="text-6xl font-medium text-[#FC3603]">WorldAds</h1>
+            <p className="text-xl w-[400px] mt-4 text-[#030303]">Seize the spotlight in bustling areas with high-traffic visibility. Make your brand the center of attention with</p>
+            <div className="flex items-center w-full gap-5  mt-10">
+              <h1 className="text-4xl w-[70%] font-medium text-[#030303]">Precision Targeting</h1>
+              <hr className="border w-full  border-[#FC3603]" />
+            </div>
+            <p className="text-xl w-80 mt-5"> Reach your ideal audience at the right time and place.</p>
+            <hr className="border border-[#7E7E7E33] w-80 my-5" />
+            <div className="flex items-center gap-5 w-full mt-10">
+              <h1 className="text-4xl font-medium w-[50%] text-[#030303]">Dynamic HD Quality Ads</h1>
+              <hr className="border  w-[370px] border-[#FC3603]" />
+            </div>
+            <p className="text-xl w-80 mt-5">Captivate viewers with stunning, crystal-clear advertisements.</p>
+            <hr className="border border-[#7E7E7E33] w-80 my-5" />
+            <div className="flex items-center w-full mt-10">
+              <h1 className="text-4xl font-medium  w-[80%] text-[#030303]">Scalable Geofenced Campaigns</h1>
+              <hr className="border  w-full border-[#FC3603]" />
+            </div>
+            <p className="text-xl w-96 mt-5">  Customize and scale your campaigns with precision.</p>
+            <hr className="border border-[#7E7E7E33] w-80 my-5" />
+            <div className="border border-gray-300 xl:mt-14 mt-10 rounded-full lg:mx-0 mx-auto  xl:w-44 w-36 ">
+              <button className="text-center text-sm border xl:p-3 md:p-3 p-2 rounded-full  xl:w-[164px] w-[133px] font-medium m-1 border-[#181818]">Join waitlist</button>
+            </div>
+          </div>
+
+        </div> */}
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   );
 }
