@@ -5,7 +5,7 @@ const Preloader = () => {
       <div className="preloader">
         <div className="spinner"></div>
         {/* You can customize the loading message or animation here */}
-        <p>Loading...</p>
+        {/* <p>Loading...</p> */}
       </div>
     );
   };
