@@ -38,7 +38,6 @@ const Main = () => {
                             </div>
                         </div>
                         <img src="./assets/images/Vector(Black).png" className="text-white absolute max-h-[400px]  sm:max-h-[500px]  lg:-top-52 right-0 top-10" />
-                        {/* <div id="nodeOperator"></div> */}
                     </div>
                 </div>
             </div>

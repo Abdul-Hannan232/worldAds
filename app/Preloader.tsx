@@ -13,14 +13,12 @@ const Preloader = () => {
 <img src="./assets/images/logo-circle.png"  className="w-16"/>
 {/* <img src="./Group.png"  className="w-16"/> */}
 <h1 className="font-semibold font1 sm:w-[70%] text-left	text-3xl sm:text-5xl">See the world your own way</h1>
-<div className="h-2 sm:h-3 w-full   overflow-hidden absolute bottom-0  left-0 right-0">
+<div className="h-2  w-full   overflow-hidden absolute bottom-0  left-0 right-0">
       <div className="h-full bg-[#C02607] animate-left-to-right"></div>
     </div>
 
 </div>
-      {/* <div className="h-4 w-24 bg-gray-300 rounded-full overflow-hidden">
-      <div className="h-full bg-blue-500 animate-left-to-right"></div>
-    </div> */}
+      
 
     </div>
     );
