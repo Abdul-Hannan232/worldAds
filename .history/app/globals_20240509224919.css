@@ -6,9 +6,6 @@
 html{
   scroll-behavior: smooth;
 }
-.body {
-  overflow: hidden; /* Hide scrollbars */
-}
 .dropdown-content {
   max-height: 0;
   overflow: hidden;

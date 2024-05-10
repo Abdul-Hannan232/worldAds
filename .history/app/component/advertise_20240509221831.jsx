@@ -1,0 +1,95 @@
+"use client"
+import Image from "next/image";
+import { useState } from "react";
+export default function Advertise() {
+  const [precision, setPrecision] = useState(false)
+  const precisionOpen = () => {
+    setPrecision(!precision)
+    setDynamic(false)
+    setScalable(false)
+  }
+  const [dynamic, setDynamic] = useState(false)
+  const dynamicDrop = () => {
+    setDynamic(!dynamic)
+    setScalable(false)
+    setPrecision(false)
+  }
+  const [scalable, setScalable] = useState(false)
+  const ScalableDrop = () => {
+    setScalable(!scalable)
+    setDynamic(false)
+    setPrecision(false)
+  }
+  return (
+    <div className="">
+      <div id="advertise" className="xl:pl-32 2xl:pl-40   lg:flex lg:mt-48 mt-32 w-full background gap-24">
+        <div className="-mt-14">
+          <Image src="" alt="image" width={226} height={426} className="lg:w-[526px] lg:h-[726px] 2xl:w-[650px] 2xl:h-[926px]  lg:mx-0 mx-auto" />
+        </div>
+        <div className="lg:w-[60%] w-[90%]  lg:mx-0 mx-auto lg:mt-40 mt-10">
+          <h1 className="xl:text-6xl text-5xl 2xl:text-8xl lg:text-start text-center font-medium text-[#181818]">Advertise with</h1>
+          <h1 className="xl:text-6xl text-5xl 2xl:text-8xl lg:text-start text-center font-medium text-[#FC3603]">WorldAds</h1>
+          <p className="xl:text-xl lg:text-lg text-sm 2xl:text-2xl lg:w-[400px] 2xl:w-[600px] mt-4 lg:text-start text-center text-[#030303]">Seize the spotlight in bustling areas with high-traffic visibility. Make your brand the center of attention with</p>
+          <div className="h-[400px] overflow-scroll">
+            <div className="flex items-center lg:justify-start justify-center w-full gap-5  mt-10">
+              <h1 onClick={precisionOpen} className={`${precision ? "xl:text-3xl text-[#030303]" : "xl:text-2xl text-gray-400 "} cursor-pointer lg:text-2xl lg:text-start text-center  text-2xl 2xl:text-6xl xl:w-[80%] lg:w-[80%]  2xl:w-[90%] font-bold `}>Precision Targeting</h1>
+              <hr className="border w-[80%] lg:block hidden  border-[#FC3603]" />
+            </div>
+            <div class="hs-dropdown relative inline-flex">
+              <button id="hs-dropdown-default" type="button" class="hs-dropdown-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
+                Actions
+                <svg class="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+
+              <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-2 mt-2 dark:bg-neutral-800 dark:border dark:border-neutral-700 dark:divide-neutral-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full" aria-labelledby="hs-dropdown-default">
+                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="#">
+                  Newsletter
+                </a>
+                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="#">
+                  Purchases
+                </a>
+                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="#">
+                  Downloads
+                </a>
+                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="#">
+                  Team Account
+                </a>
+              </div>
+            </div>
+            {/* {precision && (
+              <p  style={{
+                opacity: precision ? 1 : 0,
+                transition: 'opacity 0.5s ease-in-out', // Smooth transition
+              }}
+               className="lg:text-xl text-sm 2xl:text-2xl lg:w-80 lg:text-start w-40 lg:mx-0 mx-auto text-center mt-5"> Reach your ideal audience at the right time and place.</p>
+
+            )} */}
+            <hr className="border lg:border-[#7E7E7E33]  border-[#FC3603] lg:w-80 w-60 lg:mx-0 mx-auto my-5" />
+            <div className="flex items-center lg:justify-start justify-center gap-5 w-full mt-10">
+              <h1 onClick={dynamicDrop} className={`${dynamic ? "xl:text-2xl text-[#030303]" : "xl:text-xl text-gray-400 "} lg:text-2xl cursor-pointer  text-2xl  2xl:text-6xl font-bold lg:text-start text-center  xl:w-[50%] lg:w-[45%] 2xl:w-[60%] `}>Dynamic HD Quality Ads</h1>
+              <hr className="border   w-[50%] lg:block hidden 2xl:w-[400px] border-[#FC3603]" />
+            </div>
+            {dynamic && (
+              <p className="lg:text-xl text-sm 2xl:text-2xl lg:w-80 w-52 lg:mx-0 mx-auto  lg:text-start text-center mt-5">Captivate viewers with stunning, crystal-clear advertisements.</p>
+
+            )}
+            <hr className="border lg:border-[#7E7E7E33]  border-[#FC3603] lg:w-80 w-60 lg:mx-0 mx-auto my-5" />
+            <div className="flex items-center lg:justify-start justify-center w-full mt-10">
+              <h1 onClick={ScalableDrop} className={`${scalable ? "xl:text-3xl text-[#030303]" : "xl:text-2xl text-gray-400 "} cursor-pointer  xl:text-xl lg:text-3xl  text-2xl  2xl:text-6xl font-bold lg:text-start text-center  xl:w-[80%] lg:w-[60%] 2xl:w-full text-[#030303]`}>Scalable Geofenced Campaigns</h1>
+              <hr className="border   w-[73%] lg:block hidden border-[#FC3603]" />
+            </div>
+            {scalable && (
+              <p className="lg:text-xl text-sm 2xl:text-2xl  lg:text-start text-center  w-40 lg:mx-0 mx-auto   lg:w-96 mt-5">  Customize and scale your campaigns with precision.</p>
+
+            )}
+            <hr className="border lg:border-[#7E7E7E33]  border-[#FC3603] lg:w-80 w-60 lg:mx-0 mx-auto my-5" />
+            <div className="border border-gray-300 xl:mt-14 mt-10 rounded-full lg:mx-0 mx-auto  xl:w-44 w-36 ">
+              <button className="text-center text-sm border xl:p-3 md:p-3 p-2 rounded-full  xl:w-[164px] w-[133px] font-medium m-1 border-[#181818]">Join waitlist</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  )
+}

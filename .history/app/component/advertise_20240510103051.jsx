@@ -30,7 +30,7 @@ export default function Advertise() {
           <h1 className="xl:text-6xl text-5xl 2xl:text-8xl lg:text-start text-center font-medium text-[#181818]">Advertise with</h1>
           <h1 className="xl:text-6xl text-5xl 2xl:text-8xl lg:text-start text-center font-medium text-[#FC3603]">WorldAds</h1>
           <p className="xl:text-xl lg:text-lg text-sm 2xl:text-2xl lg:w-[400px] 2xl:w-[600px] mt-4 lg:text-start text-center text-[#030303]">Seize the spotlight in bustling areas with high-traffic visibility. Make your brand the center of attention with</p>
-          <div className="h-[400px] overflow-scroll body">
+          <div className="h-[400px] overflow-scroll">
             <div className="flex items-center lg:justify-start justify-center w-full gap-5 mt-10">
               <h1
                 onClick={precisionOpen}
@@ -39,7 +39,7 @@ export default function Advertise() {
               >
                 Precision Targeting
               </h1>
-              <hr className={`${precision ?"lg:block hidden":"hidden"}   border w-[80%] l  border-[#FC3603]`} />
+              <hr className={`${scalable ?"lg:block hidden":"hidden"}   border w-[80%] l  border-[#FC3603]`} />
             </div>
             <div className={`transition-all duration-500 ${precision ? 'max-h-96' : 'max-h-0 overflow-hidden'}`}>
               {precision && (
@@ -59,7 +59,7 @@ export default function Advertise() {
               >
                 Dynamic HD Quality Ads
               </h1>
-              <hr className={`${dynamic  ?"lg:block hidden":"hidden"}   border w-[50%]  2xl:w-[400px] border-[#FC3603]`} />
+              <hr className={`${scalable ?"lg:block hidden":"hidden"}   border w-[50%]  2xl:w-[400px] border-[#FC3603]`} />
             </div>
             <div className={`transition-all duration-500 ${dynamic ? 'max-h-96' : 'max-h-0 overflow-hidden'}`}>
               {dynamic && (
