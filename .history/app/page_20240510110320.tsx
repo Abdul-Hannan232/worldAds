@@ -12,6 +12,7 @@ export default function Home() {
       <div>
         <Header />
         <Main />
+
         <NodeOperator />
         <RideEarn />
         <Advertise />

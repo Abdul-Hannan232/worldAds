@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 
-const RideEarn = () => {
+const rideEarn = () => {
   return (
     <div>
          <div id="ride"className="flex lg:flex-row flex-col-reverse h-screen w-[80%] mt-20 mx-auto items-end justify-between">
@@ -20,4 +20,4 @@ const RideEarn = () => {
   )
 }
 
-export default RideEarn
+export default rideEarn

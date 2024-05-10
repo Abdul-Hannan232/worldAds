@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-const NodeOperator = () => {
+const nodeOperator = () => {
     return (
         <>
             <div id="nodeOperator" className="lg:flex w-[80%] mt-80 h-screen mx-auto items-end justify-between">
@@ -21,4 +21,4 @@ const NodeOperator = () => {
   )
 }
 
-export default NodeOperator
+export default nodeOperator

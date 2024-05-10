@@ -21,4 +21,4 @@ const NodeOperator = () => {
   )
 }
 
-export default NodeOperator
+export default nodeOperator
