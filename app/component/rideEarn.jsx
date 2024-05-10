@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from "next/image";
 
 const RideEarn = () => {
+  const[section ,setSection] = useState();
+
+  useEffect(() => {
+      const handleHashChange = () => {
+         setSection(window.location.hash)
+      };
+      window.addEventListener('hashchange', handleHashChange);
+      return () => {
+          window.removeEventListener('hashchange', handleHashChange);
+      };
+  }, []);
   return (
     <div>
-         <div id="ride"className="flex lg:flex-row flex-col-reverse h-screen w-[80%] mt-20 mx-auto items-end justify-between">
+         <div id="ride"className={`${section =="#ride" ? "pt-[24vh] lg:pt-[20vh]": "pt-0"} flex lg:flex-row flex-col-reverse h-max w-[80%] mt-20 mx-auto items-end justify-between`}>
           <div className="xl:w-[410px] md:w-[400px] lg:mt-0 mt-10 lg:mx-0 mx-auto">
             <h1 className="xl:text-6xl md:text-5xl text-3xl font-medium lg:text-start text-center text-[#181818]">Ride & Earn</h1>
             <p className="xl:text-lg lg:w-auto md:w-80  lg:text-sm md:text-md text-xs font-light lg:w-auto  lg:mx-0 mx-auto text-[#030303] lg:text-start text-center mt-5">Transform every journey into a profitable venture. Our Smart Rooftop Digital Screens turn miles into money, making every trip count.</p>

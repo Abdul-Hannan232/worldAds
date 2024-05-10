@@ -3,7 +3,7 @@ import React from 'react'
 const Main = () => {
     return (
         <>
-            <div className='gradient-color h-[700px] w-full rounded-b-[60px] lg:pt-40 pt-24 px-5  sm:px-16 pb-14 relative  '>
+            <div className='gradient-color h-[700px] mb-[26vh] sm:mb-[45vh] w-full rounded-b-[60px] pt-24 lg:pt-40  px-5  sm:px-16  relative '>
                 <div className="lg:w-[90%] w-[95%] mx-auto">
 
 
@@ -28,18 +28,18 @@ const Main = () => {
                         <button type="submit" className=" absolute end-1 top-1 font-bold bg-white hover:bg-white-800 focus:ring-4 font-bold focus:outline-none focus:ring-none font-medium rounded-[100px] lg:text-sm text-xs lg:px-8 px-5 lg:py-4 py-2">Join waitlist</button>
                     </div>
 
-                 <div className='relative'>
-                        
-                    <div className="flex items-center gap-3 lg:mt-40 mt-5 lg:justify-start justify-center ">
+                    <div className='relative'>
+
+                        <div className="flex items-center gap-3 lg:mt-40 mt-5 lg:justify-start justify-center ">
                             <img src="./assets/images/discord.png" />
                             <div>
                                 <p className="text-white text-sm">Stay updated.</p>
                                 <p className="text-white font-bold text-sm">Join our discord community</p>
                             </div>
                         </div>
-                        <img src="./assets/images/Vector(Black).png" className="text-white absolute  lg:-top-52 right-0 top-14" />
-
-                    </div> 
+                        <img src="./assets/images/Vector(Black).png" className="text-white absolute max-h-[400px]  sm:max-h-[500px]  lg:-top-52 right-0 top-10" />
+                        {/* <div id="nodeOperator"></div> */}
+                    </div>
                 </div>
             </div>
         </>
