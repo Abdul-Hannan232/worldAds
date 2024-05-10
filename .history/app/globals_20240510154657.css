@@ -7,7 +7,7 @@ html{
   scroll-behavior: smooth;
 }
 .body {
-  overflow-x: hidden; /* Hide scrollbars */
+  overflow-y: hidden; /* Hide scrollbars */
 }
 .dropdown-content {
   max-height: 0;
