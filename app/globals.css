@@ -35,13 +35,6 @@ html {
   background-repeat: no-repeat;
   background-size: center;
 }
-.background2 {
-  background-image: url("/images.jpg") !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-attachment: fixed !important;
-}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
