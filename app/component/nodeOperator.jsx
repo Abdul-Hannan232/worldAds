@@ -19,7 +19,7 @@ const NodeOperator = () => {
    
     return (
         <>
-            <div id="nodeOperator" className={`${section =="#nodeOperator" ? "pt-24": "pt-0"}  lg:flex w-[80%]  h-max mx-auto items-end justify-between`}>
+            <div id="nodeOperator" className={`${section =="#nodeOperator" ? "pt-24": "pt-0"}  lg:flex w-[80%]  h-max mx-auto items-end justify-between  bg-center bg-no-repeat  bg-cover bg-fixed bg-[url('https://i.imgur.com/8CV5WAB.png')]`}>
                 {/* <div id="nodeOperator" className="lg:flex w-[80%] mt-80 h-screen mx-auto items-end justify-between"> */}
                 <div >
                     <Image src="/Group 1.png" alt="Image" width={203} height={207} className="lg:w-[493px] lg:h-[497px] lg:mx-0 mx-auto " />
