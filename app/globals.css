@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ */
+
+ @import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 html{
   scroll-behavior: smooth;
@@ -30,6 +35,14 @@ html{
   background-position: center;
   background-repeat: no-repeat;
   background-size: center;
+  
+}
+.background2{
+  background-image: url("/images.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
   
 }
 :root {
