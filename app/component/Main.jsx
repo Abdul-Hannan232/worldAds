@@ -22,7 +22,7 @@ const Main = () => {
                         </div>
                     </div>
 
-                    <div class="relative lg:w-[550px]  rounded-[100px] mt-10">
+                    <div className="relative lg:w-[550px]  rounded-[100px] mt-10">
 
                         <input type="text" id="default-search" className="block w-full lg:p-5 p-3  -10 lg:text-sm text-xs text-gray-900 bg-[#FFFFFF1A] border border-white focus:ring-white focus:border-white rounded-[100px] placeholder:text-[#FFFFFF80] " placeholder="Enter your email address" required />
                         <button type="submit" className=" absolute end-1 top-1 font-bold bg-white hover:bg-white-800 focus:ring-4 font-bold focus:outline-none focus:ring-none font-medium rounded-[100px] lg:text-sm text-xs lg:px-8 px-5 lg:py-4 py-2">Join waitlist</button>
