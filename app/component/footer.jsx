@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { MdOutlineArticle } from "react-icons/md";
+import { FaPhone } from "react-icons/fa6";
+import { MdOutlinePolicy } from "react-icons/md";
+import { MdOutlineContactPage } from "react-icons/md";
 
 export default function Footer() {
     const router = useRouter();
@@ -18,14 +22,16 @@ export default function Footer() {
                 <div className="lg:flex text-white lg:mt-0 mt-10 items-center gap-10">
                     <div>
                         <ul className="text-lg lg:text-start text-center space-y-3">
-                            <li className="hover:text-gray-300 cursor-pointer" onClick={() => goToPage("/blogs")}>Blog</li>
-                            <li className="hover:text-gray-300 cursor-pointer" onClick={() => goToPage("/contact")}>Contact Us</li>
+                            <li className="hover:text-gray-300 cursor-pointer flex items-center gap-2" onClick={() => goToPage("/blogs")}><MdOutlineArticle />Blog</li>
+                            <li className="hover:text-gray-300 cursor-pointer flex items-center gap-2" onClick={() => goToPage("/contact")}><FaPhone className="text-sm"/>
+Contact Us</li>
                         </ul>
                     </div>
                     <div>
                         <ul className="text-lg lg:mt-0 mt-3 lg:text-start text-center space-y-3">
-                            <li className="hover:text-gray-300 cursor-pointer" onClick={() => goToPage("/privacy")}>Privacy Policy</li>
-                            <li className="hover:text-gray-300 cursor-pointer" onClick={() => goToPage("/services")}>Terms Of Service</li>
+                            <li className="hover:text-gray-300 cursor-pointer flex items-center gap-2" onClick={() => goToPage("/privacy")}><MdOutlinePolicy />Privacy Policy</li>
+                            <li className="hover:text-gray-300 cursor-pointer flex items-center gap-2" onClick={() => goToPage("/services")}><MdOutlineContactPage />
+ Terms Of Service</li>
                         </ul>
 
 
