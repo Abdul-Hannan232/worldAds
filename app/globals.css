@@ -24,6 +24,11 @@ html {
   max-height: 100px; /* Set the max-height to whatever you prefer */
 }
 
+.no-scrollbar {
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
+}
+
 * {
   font-family: "Rajdhani", sans-serif;
   font-weight: 400;
