@@ -15,7 +15,8 @@ const RideEarn = () => {
   }, []);
   return (
     <div>
-      <div id="ride" className={`${section == "#ride" ? "pt-[24vh] lg:pt-[20vh]" : "pt-0"} flex lg:flex-row flex-col-reverse h-max w-[80%] mt-20 mx-auto items-end justify-between bg-center bg-no-repeat  bg-cover bg-fixed bg-[url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Vwd2s2MTkxNjM5My13aWtpbWVkaWEtaW1hZ2Utam9iNTcyLTEuanBn.jpg')]`}>
+      {/* <div id="ride" className={`${section == "#ride" ? "pt-[24vh] lg:pt-[20vh]" : "pt-0"} flex lg:flex-row flex-col-reverse h-max w-[80%] mt-20 mx-auto items-end justify-between bg-center bg-no-repeat  bg-cover bg-fixed bg-[url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Vwd2s2MTkxNjM5My13aWtpbWVkaWEtaW1hZ2Utam9iNTcyLTEuanBn.jpg')]`}> */}
+      <div id="ride" className={`${section == "#ride" ? "pt-[24vh] lg:pt-[20vh]" : "pt-0"} flex lg:flex-row flex-col-reverse h-max w-[80%] mt-20 mx-auto items-end justify-between bg-center bg-no-repeat  bg-cover bg-fixed bg-[url('/images.jpg')]`}>
         <div className="xl:w-[410px] md:w-[400px] lg:mt-0 mt-10 lg:mx-0 mx-auto">
           <h1 className="xl:text-6xl md:text-5xl text-3xl font-medium lg:text-start text-center text-[#181818]">Ride & Earn</h1>
           <p className="xl:text-lg lg:w-auto md:w-80  lg:text-sm md:text-md text-xs font-light lg:w-auto  lg:mx-0 mx-auto text-[#030303] lg:text-start text-center mt-5">Transform every journey into a profitable venture. Our Smart Rooftop Digital Screens turn miles into money, making every trip count.</p>
