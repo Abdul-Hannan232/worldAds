@@ -29,7 +29,7 @@ export default function Advertise() {
         <div className="lg:w-[60%] w-[90%]  lg:mx-0 mx-auto lg:mt-40 mt-10">
           <h1 className="xl:text-6xl text-5xl 2xl:text-8xl lg:text-start text-center font-medium text-[#181818]">Advertise with</h1>
           <h1 className="xl:text-6xl text-5xl 2xl:text-8xl lg:text-start text-center font-medium text-[#FC3603]">WorldAds</h1>
-          <p className="xl:text-xl lg:text-lg text-sm 2xl:text-2xl lg:w-[400px] 2xl:w-[600px] mt-4 lg:text-start text-center text-[#030303]">Seize the spotlight in bustling areas with high-traffic visibility. Make your brand the center of attention with</p>
+          <p className="xl:text-xl lg:text-lg text-base 2xl:text-2xl lg:w-[400px] 2xl:w-[600px] mt-4 lg:text-start text-center text-[#030303]">Seize the spotlight in bustling areas with high-traffic visibility. Make your brand the center of attention with</p>
           <div className="h-[300px] overflow-scroll body">
             <div className="flex items-center lg:justify-start justify-center w-full gap-5 mt-10">
               <h1
@@ -44,7 +44,7 @@ export default function Advertise() {
             <div className={`transition-all duration-500 ${precision ? 'max-h-96' : 'max-h-0 overflow-hidden'}`}>
               {precision && (
                 <p
-                  className="lg:text-xl text-sm 2xl:text-2xl lg:w-80 lg:text-start w-40 lg:mx-0 mx-auto text-center mt-5"
+                  className="lg:text-xl text-base 2xl:text-2xl lg:w-80 lg:text-start w-60 lg:mx-0 mx-auto text-center mt-5"
                 >
                   Reach your ideal audience at the right time and place.
                 </p>
@@ -64,7 +64,7 @@ export default function Advertise() {
             <div className={`transition-all duration-500 ${dynamic ? 'max-h-96' : 'max-h-0 overflow-hidden'}`}>
               {dynamic && (
                 <p
-                  className="lg:text-xl text-sm 2xl:text-2xl lg:w-80 w-52 lg:mx-0 mx-auto lg:text-start text-center mt-5"
+                  className="lg:text-xl text-base 2xl:text-2xl lg:w-80 w-60 lg:mx-0 mx-auto lg:text-start text-center mt-5"
                 >
                   Captivate viewers with stunning, crystal-clear advertisements.
                 </p>
@@ -84,7 +84,7 @@ export default function Advertise() {
             <div className={`transition-all duration-500 ${scalable ? 'max-h-96' : 'max-h-0 overflow-hidden'}`}>
               {scalable && (
                 <p
-                  className="lg:text-xl text-sm 2xl:text-2xl lg:text-start text-center w-40 lg:mx-0 mx-auto lg:w-96 mt-5"
+                  className="lg:text-xl text-base 2xl:text-2xl lg:text-start text-center w-60 lg:mx-0 mx-auto lg:w-96 mt-5"
                 >
                   Customize and scale your campaigns with precision.
                 </p>
@@ -101,3 +101,6 @@ export default function Advertise() {
     </div>
   )
 }
+
+
+
