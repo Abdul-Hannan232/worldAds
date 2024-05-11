@@ -28,7 +28,7 @@ const Main = () => {
                         <button type="submit" className=" absolute end-1 top-1 font-bold bg-white hover:bg-white-800 focus:ring-4 font-bold focus:outline-none focus:ring-none font-medium rounded-[100px] lg:text-sm text-xs lg:px-8 px-5 lg:py-4 py-2">Join waitlist</button>
                     </div>
 
-                    <div className='relative'>
+                    <div className='relative   items-end '>
 
                         <div className="flex items-center gap-3 lg:mt-40 mt-5 lg:justify-start justify-center ">
                             <img src="./assets/images/discord.png" />
@@ -37,7 +37,10 @@ const Main = () => {
                                 <p className="text-white font-bold text-sm">Join our discord community</p>
                             </div>
                         </div>
-                        <img src="./assets/images/Vector(Black).png" className="text-white absolute max-h-[400px]  sm:max-h-[500px]  lg:-top-52 right-0 top-10" />
+                        <div className='relative  justify-center flex  lg:justify-end '>
+                            <img src="./assets/images/Vector(Black).png" className="text-white absolute max-h-[400px] sm:max-h-[500px] lg:relative lg:right-0 lg:top-10 lg:-mt-52 mt-20 lg:mr-0 mx-auto" />
+                        </div>
+
                     </div>
                 </div>
             </div>
