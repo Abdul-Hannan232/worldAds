@@ -24,8 +24,8 @@ export default function Advertise() {
     <div className="">
       <div id="advertise" className="xl:pl-32 2xl:pl-40   lg:flex lg:mt-48 mt-32 w-full background gap-24">
         <div className="-mt-14">
-          {/* <Image src="" alt="advertisment" width={} height={} className="rounded-[30%] border border-red-800 p-3"/> */}
-          <Image src="/Group 25.png" alt="image" width={226} height={426} className="lg:w-[526px] lg:h-[726px] 2xl:w-[650px] 2xl:h-[926px]  lg:mx-0 mx-auto" />
+        <Image src="/world.jpeg" alt="advertisment" width={400} height={600} className="rounded-[50%] border-2 border-red-800 p-3"/>
+          {/* <Image src="/Group 25.png" alt="image" width={226} height={426} className="lg:w-[526px] lg:h-[726px] 2xl:w-[650px] 2xl:h-[926px]  lg:mx-0 mx-auto" /> */}
         </div>
         <div className="lg:w-[60%] w-[90%]  lg:mx-0 mx-auto lg:mt-40 mt-10">
           <h1 className="xl:text-6xl text-5xl 2xl:text-8xl lg:text-start text-center font-medium text-[#181818]">Advertise with</h1>
