@@ -10,9 +10,9 @@ const Privacy = () => {
             <li>        <h1 className=" font-medium">Effective Date:14th May, 2024</h1>
             </li>
             <li>
-              <p>Welcome to WorldAds! Your privacy is important to us. This Privacy Policy outlines how WorldAds ("WorldAds", "we",
-                "us", or "our") collects, uses, shares, and protects information in relation to our mobile services, website, and
-                any software provided on or in connection with WorldAds services (collectively, the "Service"). This policy also
+              <p>Welcome to WorldAds! Your privacy is important to us. This Privacy Policy outlines how WorldAds (WorldAds, we,
+                us, or our) collects, uses, shares, and protects information in relation to our mobile services, website, and
+                any software provided on or in connection with WorldAds services (collectively, the Service). This policy also
                 describes your choices regarding the collection and use of your information.</p>
             </li>
             <li>
