@@ -10,10 +10,10 @@ const NodeOperator = () => {
 
     return (
         <>
-            <div id="nodeOperator" className={`${section == "#nodeOperator" ? "pt-24" : "pt-0"}  mt-96 lg:flex w-[80%]  h-max mx-auto items-end justify-between `}>
+            <div id="nodeOperator" className={`${section == "#nodeOperator" ? "pt-24" : "pt-0"}  mt-60 lg:flex w-[80%]  h-max mx-auto items-end justify-between `}>
                 {/* <div id="nodeOperator" className="lg:flex w-[80%] mt-80 h-screen mx-auto items-end justify-between"> */}
                 <div >
-                    <Image src="/Group 1.png" alt="Image" width={203} height={207} className="lg:w-[493px] lg:h-[497px] lg:mx-0 mx-auto " />
+                    <Image src="/Group 1.png" alt="Image" width={303} height={307} className="lg:w-[493px] lg:h-[497px] lg:mx-0 mx-auto " />
                 </div>
                 <div className="xl:w-[500px]  md:w-[400px] lg:mt-0 mt-10 lg:mx-0 mx-auto">
                     <img src="./arrow2.png" className=" hidden lg:block h-32 lg:h-auto w-[136px]  mb-6 xl:-ml-8  " />
