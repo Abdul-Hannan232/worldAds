@@ -3,10 +3,10 @@ import React from "react";
 const Privacy = () => {
   return (
     <div>
-      <div className="w-[80%] mx-auto mt-48 ">
+      <div className="w-[80%] mx-auto mt-40 ">
         <h1 className="text-5xl font-bold text-center text-black">WorldAds Privacy Policy</h1>
         <div>
-          <ul className="text-md mt-10 space-y-5 ">
+        <ul className="text-md mt-20 space-y-5 ">
             <li>        <h1 className=" font-medium">Effective Date:14th May, 2024</h1>
             </li>
             <li>

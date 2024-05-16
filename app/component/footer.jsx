@@ -11,7 +11,7 @@ export default function Footer() {
     const router = useRouter();
 
     function goToPage(path) {
-        router.push(`pages/${path}`);
+        router.push(`${path}`);
     }
 
     return (
@@ -33,7 +33,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <ul className="text-lg lg:mt-0 mt-3  lg:text-start text-center space-y-3">
-                         <Link href="/pages/privacy">
+                         <Link href="/privacy">
                          <li className="hover:text-gray-300 justify-center lg:justify-start cursor-pointer flex items-center gap-2" onClick={() => goToPage("/privacy")}><MdOutlinePolicy />Privacy Policy</li>
 
                             </Link> 

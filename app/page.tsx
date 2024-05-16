@@ -27,7 +27,7 @@ export default function Home() {
       <div>
        
        {/* {loading?(<Preloader />):(  <> */}
-\            <Main />
+            <Main />
             <NodeOperator />
             <RideEarn />
             <Advertise />
