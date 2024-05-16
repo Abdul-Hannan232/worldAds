@@ -5,9 +5,9 @@ const Services = () => {
     <div>
       <div className="w-[80%] mx-auto mt-48 ">
 
-        <h1 className="text-5xl font-bold text-center text-black">Terms of Use for WorldAds</h1>
+        <h1 className="lg:text-5xl text-3xl  font-bold text-center text-black">Terms of Use for WorldAds</h1>
 
-        <h1 className="text-center mt-4 text-3xl ">Welcome to WorldAds!</h1>
+        <h1 className="text-center mt-4 lg:text-3xl text-xl ">Welcome to WorldAds!</h1>
         <div>
           <ul className="text-md mt-10 space-y-5 ">
 
