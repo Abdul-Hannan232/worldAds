@@ -96,7 +96,7 @@ const Privacy = () => {
   </p>
 </li>
             <li>
-              <h1 className="text-2xl font-bold"> 5. Children's Privacy</h1>
+              <h1 className="text-2xl font-bold"> 5. Childrens Privacy</h1>
             </li>
 
          <li>

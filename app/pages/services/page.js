@@ -12,7 +12,7 @@ const Services = () => {
           <ul className="text-md mt-10 space-y-5 ">
 
             <li> <p>
-              These Terms of Use ("Terms") govern your access to and use of the WorldAds services, including our various websites, SMS, APIs, email notifications, applications, buttons, widgets, ads, commerce services (collectively, the "Services"), and any information, text, graphics, photos or other materials uploaded, downloaded or appearing on the Services (collectively referred to as "Content"). Your access to and use of the Services are conditioned on your acceptance of and compliance with these Terms. By accessing or using the Services you agree to be bound by these Terms. </p>
+              These Terms of Use (Terms) govern your access to and use of the WorldAds services, including our various websites, SMS, APIs, email notifications, applications, buttons, widgets, ads, commerce services (collectively, the Services), and any information, text, graphics, photos or other materials uploaded, downloaded or appearing on the Services (collectively referred to as jContent). Your access to and use of the Services are conditioned on your acceptance of and compliance with these Terms. By accessing or using the Services you agree to be bound by these Terms. </p>
             </li>
             <li> <h1 className="text-xl font-medium"> 1. Basic Terms</h1></li>
             <li> <p>  You are responsible for your use of the Services and for any consequences thereof. The Content you submit, post, or display will be able to be viewed by other users of the Services and through third-party services and websites. You should only provide Content that you are comfortable sharing with others under these Terms.</p></li>
