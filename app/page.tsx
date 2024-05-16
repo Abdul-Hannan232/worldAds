@@ -26,14 +26,12 @@ export default function Home() {
     <>
       <div>
        
-       {loading?(<Preloader />):(  <>
-            <Header />
-            <Main />
+       {/* {loading?(<Preloader />):(  <> */}
+\            <Main />
             <NodeOperator />
             <RideEarn />
             <Advertise />
-            <Footer />
-          </>)}
+          {/* </>)} */}
        
          
         
